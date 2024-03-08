@@ -1,8 +1,8 @@
-//1
+// 1;
 
-// let array = ["longest", "second", "third"];
+// const array = ["longest", "second", "third"];
 
-// function longestWord() {
+// function wordArr() {
 //   let longestWord = "";
 //   for (let i = 0; i < array.length; i++) {
 //     if (typeof array[i] === "string" && array[i].length > longestWord.length) {
@@ -12,104 +12,104 @@
 //   return longestWord;
 // }
 
-// console.log(longestWord());
+// console.log(wordArr());
 
 //2
 
-const word = "ryan";
+// const challengeTwoWord = "ryan";
 
-function switchLetters(word) {
-  word = word.split("");
-  temp = word[0];
-  word[0] = word[word.length - 1];
-  word[word.length - 1] = temp;
-  return word.join("");
-}
+// function switchLetters(word) {
+//   word = word.split("");
+//   temp = word[0];
+//   word[0] = word[word.length - 1];
+//   word[word.length - 1] = temp;
+//   return word.join("");
+// }
 
-console.log(switchLetters(word));
+// console.log(switchLetters(challengeTwoWord));
 
-3;
-const array = [5, 2, 8];
+// 3;
+// const numArr = [5, 2, 8];
 
-function sumOfNum(array) {
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-  }
-  return sum;
-}
+// function sumOfNum(array) {
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
+//   return sum;
+// }
 
-console.log(sumOfNum(array));
+// console.log(sumOfNum(numArr));
 
-//4
-const arrayOne = [1, 2, 3];
-const arrayTwo = [4, 5, 6];
+// //4
+// const arrayOne = [1, 2, 3];
+// const arrayTwo = [4, 5, 6];
 
-function combineArrays(arrayOne, arrayTwo) {
-  const finalArray = [];
-  const arrayLengths = arrayOne.length + arrayTwo.length;
-  console.log(arrayLengths);
-  for (let i = 0; i < arrayLengths; i++) {
-    if (i % 2 === 0) {
-      const shiftedArray = arrayOne.shift();
-      finalArray.push(shiftedArray);
-    } else if (i % 2 != 0) {
-      const shiftedArray = arrayTwo.shift();
-      finalArray.push(shiftedArray);
-    }
-  }
-  return finalArray;
-}
+// function combineArrays(arrayOne, arrayTwo) {
+//   const finalArray = [];
+//   const arrayLengths = arrayOne.length + arrayTwo.length;
+//   console.log(arrayLengths);
+//   for (let i = 0; i < arrayLengths; i++) {
+//     if (i % 2 === 0) {
+//       const shiftedArray = arrayOne.shift();
+//       finalArray.push(shiftedArray);
+//     } else if (i % 2 != 0) {
+//       const shiftedArray = arrayTwo.shift();
+//       finalArray.push(shiftedArray);
+//     }
+//   }
+//   return finalArray;
+// }
 
-console.log(combineArrays(arrayOne, arrayTwo));
+// console.log(combineArrays(arrayOne, arrayTwo));
 
-//ian gave me instruction to skip 5, 8, and 9
+// //ian gave me instruction to skip 5, 8, and 9
 //6
 
-const string = "This string has several different values";
-function longestWord(string) {
-  let str = string.split(" ");
-  let longest = 0;
-  let word = null;
-  for (let i = 0; i <= str.length - 1; i++) {
-    if (longest < str[i].length) {
-      longest = str[i].length;
-      word = str[i];
-    }
-  }
-  return word;
-}
+// const myString = "This string has several different values";
+// function longestWord(string) {
+//   let strArr = string.split(" ");
+//   let longestLen = 0;
+//   let longestWord = null;
+//   for (let i = 0; i <= strArr.length - 1; i++) {
+//     if (longestLen < strArr[i].length) {
+//       longestLen = strArr[i].length;
+//       longestWord = strArr[i];
+//     }
+//   }
+//   return longestWord;
+// }
 
-console.log(longestWord(string));
+// console.log(longestWord(myString));
 
 //7
-const myString = "Hi there";
-const strinTwo = "";
+// const myString = "Hi there";
+// const stringTwo = "";
 
-function returnAlpha(string) {
-  const capitalize = string.toUpperCase();
+// function returnAlpha(string) {
+//   const capitalize = string.toLowerCase();
 
-  const array = capitalize.split("");
+//   const array = capitalize.split("");
 
-  const sortArray = array.sort();
+//   const sortArray = array.sort();
 
-  const result = sortArray.join(" ");
+//   const result = sortArray.join("");
 
-  return result;
-}
+//   return result;
+// }
 
-console.log(returnAlpha(myString));
+// console.log(returnAlpha(myString));
 
-//10
-const base = 4;
-const exponent = 2;
+// //10
+// const baseNum = 4;
+// const exponentNum = 2;
 
-function returnPow(base, exponent) {
-  let result = 1;
-  for (i = 0; i < exponent; i++) {
-    result *= base;
-  }
-  return result;
-}
+// function returnPow(base, exponent) {
+//   let result = 1;
+//   for (i = 0; i < exponent; i++) {
+//     result *= base;
+//   }
+//   return result;
+// }
 
-console.log(returnPow(base, exponent));
+// console.log(returnPow(baseNum, exponentNum));
